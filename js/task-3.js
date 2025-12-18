@@ -2,7 +2,7 @@ function getElementWidth(content, padding, border) {
     const contentWidth = Number(content.replace("px", ""));
     const paddingWidth = Number(padding.replace("px", ""));
     const borderWidth = Number(border.replace("px", ""));
-    return contentWidth + (paddingWidth + borderWidth * 2);
+    return contentWidth + (2 * paddingWidth) + (2 * borderWidth);
 }
 
 console.log(getElementWidth("50px", "8px", "4px")); // 74
